@@ -3,12 +3,11 @@
 
 import { motion } from "framer-motion";
 
-import Image from "next/image";
 import { styles } from "../app/styles";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto`} style={{ backgroundImage: 'url(../assets/hero-bg.jpg)' }}>
       <div className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#283fd7]' />

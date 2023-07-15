@@ -19,7 +19,7 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
+  kotsedeal,
   jobit,
   tripguide,
   threejs,
@@ -50,7 +50,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
@@ -192,8 +192,8 @@ const testimonials = [
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial: 
-    "Rick transformed our website into a customer-attracting platform.",
+    testimonial:
+      "Rick transformed our website into a customer-attracting platform.",
     name: "John Smith",
     designation: "CEO",
     company: "XYZ Corporation",
@@ -211,7 +211,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Kotse Deal PH",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -220,37 +220,37 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "bootstrap",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: kotsedeal,
+    source_code_link: "https://mp2-car-app.onrender.com/",
   },
   {
-    name: "Job IT",
+    name: "Cuddle Care",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Our user-friendly web application allows users to conveniently search for pet clinic services, make reservations, and book slots based on their current location.",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://anothonyd.github.io/",
   },
   {
     name: "Trip Guide",
