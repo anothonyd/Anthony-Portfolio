@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { About, Contact, Experience, Feedbacks, Hero, Tech, Works, NavBar } from "../components";
+import { About, Contact, Feedbacks, Hero, Tech, Works, NavBar } from "../components";
 import BarLoader from "react-spinners/BarLoader";
 const Page = () => {
   const [loading, setLoading] = useState(false);
@@ -11,7 +11,7 @@ const Page = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000)
+    }, 1500)
   }, [])
 
   return (
@@ -41,7 +41,6 @@ const Page = () => {
               <Hero />
             </motion.div>
             <About />
-            <Experience />
             <Tech />
             <Works />
             <Feedbacks />

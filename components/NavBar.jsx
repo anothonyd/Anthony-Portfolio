@@ -31,16 +31,16 @@ const NavBar = () => {
             alt='logo'
             className='object-contain my-6'
           />
-          <p className='text-white text-[18px] font-bold cursor-pointer'>Anthony</p>
+          <p className='text-white text-[18px] font-bold cursor-pointer'>Anthony Dulguime</p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${active === link.title
-                ? 'text-white'
-                : 'text-secondary'
-                }hover:text-white text-[18px] font-medium cursor-pointer`}
+                ? 'text-black'
+                : 'text-white'
+                }hover:text-blue-100 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -61,8 +61,8 @@ const NavBar = () => {
                 <li
                   key={link.id}
                   className={`${active === link.title
-                    ? 'text-white'
-                    : 'text-secondary'
+                    ? 'text-blue-100'
+                    : 'text-white'
                     } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);

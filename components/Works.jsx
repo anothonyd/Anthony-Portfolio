@@ -78,7 +78,7 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      <div className='w-full hidden'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]'
@@ -91,7 +91,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-14 flex flex-wrap w-full justify-center gap-7'>
+      <div className='mt-5 flex flex-wrap w-full justify-center gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`}
             index={index} {...project} />

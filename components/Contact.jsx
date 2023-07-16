@@ -64,10 +64,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn('left', "tween", 0.2, 1)}
-        className="flex-[0.75] bg-blue-950 p-8 rounded-[20px]"
+        className="flex-[0.50] bg-blue-950 p-7 rounded-[20px]"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -75,7 +75,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-3 flex flex-col gap-5"
         >
           <label
             className="flex flex-col">
@@ -107,7 +107,7 @@ const Contact = () => {
             className="flex flex-col">
             <span className="text-white font-medium mb-4">Leave a Message</span>
             <textarea
-              rows="7"
+              rows="3"
               name="message"
               value={form.message}
               onChange={handleChange}

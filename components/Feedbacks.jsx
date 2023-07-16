@@ -50,7 +50,7 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-[#0A3E9D] rounded-[20px]`}>
+    <div className={`mt-12 bg-[#0A3E9D] rounded-[20px] hidden`} >
       <div
         className={`bg-tertiary rounded-t-2xl ${styles.padding} min-h-[300px]`}
       >

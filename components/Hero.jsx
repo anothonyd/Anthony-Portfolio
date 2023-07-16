@@ -29,7 +29,7 @@ const Hero = () => {
             transition={{ duration: 2, delay: 1 }}
             className={`${styles.heroSubText} mt-2 text-white-100`}
           >
-            I develop 3D visuals, user <br className='sm:block hidden' />
+            I develop websites,<br className='sm:block hidden' />
             interfaces and web applications
           </motion.p>
         </div>

@@ -50,13 +50,11 @@ const About = () => {
         variants={fadeIn("", "", 0.6, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3x1 leading-[30px]'
       >
-        I'm an an aspiring web developer proficient in HTML, CSS,
+        I'm a web developer proficient in HTML, CSS,
         JavaScript, React.js, TypeScript, and the MERN stack
         (MongoDB, Express.js, React.js, Node.js). I specialize in
         building modern web applications with responsive designs using
-        frameworks like Tailwind CSS and Bootstrap. I'm passionate about
-        delivering seamless user experiences and contributing to the dynamic
-        field of web development."
+        frameworks like Tailwind CSS and Bootstrap."
       </motion.p>
 
       <div className='mt-20 flex flex-wrap w-full justify-center gap-10'>
