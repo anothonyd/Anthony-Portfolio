@@ -13,7 +13,7 @@ import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className='xs:w-[250px] w-full'>
+    <Tilt className='xs:w-[240px] w-full'>
       <motion.div
         variants={fadeIn('right', 'spring', 0.5 *
           index, 0.75)}
@@ -48,7 +48,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.6, 1)}
-        className='mt-4 text-[17px] max-w-3x1 leading-[30px]'
+        className='mt-2 text-[17px] max-w-3x1 leading-[30px]'
       >
         I'm a web developer proficient in HTML, CSS,
         JavaScript, React.js, TypeScript, and the MERN stack
@@ -57,7 +57,7 @@ const About = () => {
         frameworks like Tailwind CSS and Bootstrap."
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap w-full justify-center gap-10'>
+      <div className='mt-10 flex flex-wrap w-full justify-center gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

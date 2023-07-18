@@ -34,10 +34,10 @@ const ProjectCard = ({
             <Image
               src={image}
               alt='project_image'
-              className='bg w-full h-full object-cover rounded-2xl'
+              className='w-full h-full object-cover rounded-2xl'
             />
 
-            <div className=' absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
                 className='bg-[#1E1E2F] w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
