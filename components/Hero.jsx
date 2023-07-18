@@ -25,7 +25,7 @@ const Hero = () => {
             transition={{ duration: 1.2, delay: 0.2 }}
             className={`${styles.heroHeadText}`}
           >
-            Hi, I'm <span className="text-gradient  from-purple-to-pink">Anthony</span>
+            Hi, I'm <span className="text-gradient from-purple-to-pink">Anthony</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -40,7 +40,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.4, delay: 0.4 }}
-            className="my-5 green-pink-gradient p-[1px]"><a className="bg-[#1E1E2F] p-3 text-[18px] text-[#FAFAFA]" href="https://drive.google.com/file/d/1_mW-VZKyPN2doNxbQ6YrgBrsd_7vxNUD/view?usp=sharing" >Download CV</a>
+            className="my-5 green-pink-gradient p-[1px]"><p className="transition ease-in-out delay-50 duration-200 bg-[#1E1E2F] hover:bg-[#1e1e2f37] p-3 text-[18px] text-[#FAFAFA]"><a href="https://drive.google.com/file/d/1_mW-VZKyPN2doNxbQ6YrgBrsd_7vxNUD/view?usp=sharing">Download CV</a></p>
           </motion.button>
 
         </div>
