@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 
 const Tech = () => {
   return (
-    <section className="h-screen mx-0 my-5 text-center ">
+    <section className="h-auto mx-0 my-5 text-center ">
       <motion.div className="my-5" variants={textVariant()}>
         <p className={styles.sectionSubText}>What i use</p>
         <h2 className={styles.sectionHeadText}>Tech Stacks.</h2>

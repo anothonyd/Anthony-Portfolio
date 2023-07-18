@@ -135,9 +135,9 @@ const Contact = () => {
       >
         <div className="flex flex-col me-8 h-full gap-5 items-start md:items-end justify-center pb-10">
         <h2 className="my-3 font-bold text-[30px] md:text-end text-gradient from-purple-to-pink">I would love to hear from you.</h2>
-        <p className="text-[18px]">Quezon City, Philippines</p>
-        <p className="text-[18px]">anthony.dulguime.dev@gmail.com</p>
-        <p className="text-[18px]">0956-143-0477</p>
+        <p className="text-[16px]">Quezon City, Philippines</p>
+        <p className="text-[16px]">anthony.dulguime.dev@gmail.com</p>
+        <p className="hidden text-[16px]">0956-143-****</p>
         </div>
 
 

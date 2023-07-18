@@ -33,7 +33,7 @@ const NavBar = () => {
           />
           <p className='text-[18px] font-bold cursor-pointer'>Anthony Dulguime</p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-6'>
+        <ul className='list-none hidden md:flex flex-row gap-6'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -49,16 +49,16 @@ const NavBar = () => {
         </ul>
 
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <Image
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            className="w-[28px] h-[28px] object-contain cursor-pointer rounded-2xl p-1 bg-[]"
             onClick={() => setToggle(!toggle)}
           />
 
           {/* mobile navigation */}
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'}  black-gradient p-6 absolute top-20 right-0 mx-4 my-2 min-w-[120px] z-30 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4 '>
               {navLinks.map((link) => (
                 <li
