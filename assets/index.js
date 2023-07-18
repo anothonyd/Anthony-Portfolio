@@ -30,6 +30,9 @@ import kotsedeal from "./kotsedeal.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import hero from "./hero-bg.jpg";
+
+
 export {
   logo,
   backend,
@@ -59,4 +62,5 @@ export {
   kotsedeal,
   jobit,
   tripguide,
+  hero
 };

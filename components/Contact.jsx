@@ -64,66 +64,82 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="md:flex-row flex-col flex gap-10 w-full justify-between overflow-hidden">
+
       <motion.div
         variants={slideIn('left', "tween", 0.2, 1)}
-        className="flex-[0.50] bg-blue-950 p-5 rounded-[20px]"
+        className="flex-[1] w-full green-pink-gradient p-[1px] rounded-[20px]"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <div className="bg-[#1E1E2F] px-3 md:px-5 p-5 w-full rounded-[20px]">
+          <p className={`${styles.sectionSubText}  text-[#FAFAFA]`}>Get in touch</p>
+          <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-3 flex flex-col gap-5"
-        >
-          <label
-            className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your name?"
-              className="bg-blue-900 py-4 px-6
-            placeholder:text-gray-300 text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-          <label
-            className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your email?"
-              className="bg-blue-900 py-4 px-6
-            placeholder:text-gray-300 text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-          <label
-            className="flex flex-col">
-            <span className="text-white font-medium mb-4">Leave a Message</span>
-            <textarea
-              rows="3"
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="What do you want say?"
-              className="bg-blue-900 py-4 px-6
-            placeholder:text-gray-300 text-white rounded-lg outlined-none border-none font-medium"
-            />
-          </label>
-
-          <button
-            type="submit"
-            className="bg-blue-900 py-3 px-8 w-fit text-white shadow-md shadow-primary outlined-none border-none font-bold rounded-xl"
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="mt-3 flex flex-col gap-5"
           >
-            {loading ? 'Sending...' : 'Send'}
-          </button>
-        </form>
+            <label
+              className="flex flex-col">
+              <span className="text-white font-medium mb-4">Your Name</span>
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="What's your name?"
+                className="bg-[#fafafa10] py-4 px-3
+            placeholder:text-gray-300 text-white rounded-lg outlined-none border-none font-medium"
+              />
+            </label>
+            <label
+              className="flex flex-col">
+              <span className="text-white font-medium mb-4">Your Email</span>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="What's your email?"
+                className="bg-[#fafafa10] py-4 px-3
+            placeholder:text-gray-300 text-white rounded-lg outlined-none border-none font-medium"
+              />
+            </label>
+            <label
+              className="flex flex-col">
+              <span className="text-white font-medium mb-4">Leave a Message</span>
+              <textarea
+                rows="3"
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="What do you want say?"
+                className="bg-[#fafafa10] py-4 px-3
+            placeholder:text-gray-300 text-white rounded-lg outlined-none border-none font-medium"
+              />
+            </label>
+
+            <button
+              type="submit"
+              className="text-[#FAFAFA] bg-[#fafafa10] py-3 px-8 w-fit shadow-card outlined-none border-none font-bold rounded-xl"
+            >
+              {loading ? 'Sending...' : 'Send'}
+            </button>
+          </form>
+        </div>
+      </motion.div>
+
+      <motion.div
+        variants={slideIn('right', "tween", 0.2, 1)}
+        className="flex-[1] w-full rounded-[20px]"
+      >
+        <div className="flex flex-col me-8 h-full gap-5 items-start md:items-end justify-center pb-10">
+        <h2 className="my-3 font-bold text-[30px] md:text-end text-gradient from-purple-to-pink">I would love to hear from you.</h2>
+        <p className="text-[18px]">Quezon City, Philippines</p>
+        <p className="text-[18px]">anthony.dulguime.dev@gmail.com</p>
+        <p className="text-[18px]">0956-143-0477</p>
+        </div>
+
 
       </motion.div>
     </div>

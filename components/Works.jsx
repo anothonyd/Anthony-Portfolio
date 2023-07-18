@@ -23,47 +23,49 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.7, 1)}>
       <Tilt
         options={{
-          max: 45, 
+          max: 45,
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary border-[1px] shadow-card p-5 rounded-2xl sm:w-[360px] w-full'
+        className='green-pink-gradient shadow-card p-[1px] rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
-          <Image
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
+        <div className="bg-[#1E1E2F] p-5 rounded-2xl min-h-[280px] w-full">
+          <div className='relative w-full h-[230px]'>
+            <Image
+              src={image}
+              alt='project_image'
+              className='bg w-full h-full object-cover rounded-2xl'
+            />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <Image
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
+            <div className=' absolute inset-0 flex justify-end m-3 card-img_hover'>
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className='bg-[#1E1E2F] w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <Image
+                  src={github}
+                  alt='source code'
+                  className='w-1/2 h-1/2 object-contain bg-[#'
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className='mt-5 sm:h-full md:h-36  '>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
-        </div>
+          <div className='mt-5 sm:h-full md:h-36  '>
+            <h3 className='text-[#FAFAFA] font-bold text-[24px]'>{name}</h3>
+            <p className='text-[#FAFAFA] mt-2 text-[14px]'>{description}</p>
+          </div>
 
-        <div className='mt-4 flex flex-wrap align-self-end gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
+          <div className='mt-4 flex flex-wrap align-self-end gap-2'>
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
         </div>
       </Tilt>
     </motion.div>

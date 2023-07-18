@@ -26,6 +26,7 @@ module.exports = {
       backgroundImage: {
         "linear-blue": "linear-gradient(to top, #151593, #0000e1)",
       },
+      
     },
   },
   plugins: [],

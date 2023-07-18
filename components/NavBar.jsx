@@ -13,7 +13,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`${styles.paddingX} fixed w-full h-24 py-5 flex items-center z-30 top-0  bg-primary`}
+    <nav className={`${styles.paddingX} fixed w-full h-24 py-5 flex items-center z-10 top-0 backdrop-blur`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -31,9 +31,9 @@ const NavBar = () => {
             alt='logo'
             className='object-contain my-6'
           />
-          <p className='text-white text-[18px] font-bold cursor-pointer'>Anthony Dulguime</p>
+          <p className='text-[18px] font-bold cursor-pointer'>Anthony Dulguime</p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-6'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -47,6 +47,8 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
+
+
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <Image
             src={toggle ? close : menu}
@@ -55,7 +57,8 @@ const NavBar = () => {
             onClick={() => setToggle(!toggle)}
           />
 
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          {/* mobile navigation */}
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4 '>
               {navLinks.map((link) => (
                 <li

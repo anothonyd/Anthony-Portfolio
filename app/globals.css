@@ -4,15 +4,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .from-purple-to-pink {
+    background-image: linear-gradient(to left, #00cea8, #bf61ff);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: #1E1E2F;
 }
 
+/* Theme */
+.dark {
+  background-color: #1E1E2F;
+  color: #FAFAFA;
+}
+.light {
+  background-color: #FAFAFA;
+  color: #1E1E2F;
+}
 
 .hash-span {
   margin-top: -100px;
@@ -34,12 +55,12 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: blue;
-  background: linear-gradient(-90deg, blue 0%, rgba(57, 51, 80, 0) 100%);
+.pink-gradient {
+  background: #bf61ff;
+  background: linear-gradient(-90deg, #bf61ff 0%, rgba(57, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    blue 0%,
+    #bf61ff 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
@@ -49,6 +70,9 @@
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
+
+
+
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */

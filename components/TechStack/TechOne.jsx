@@ -35,12 +35,12 @@ const TechOne = () => {
 
 
   return (
-    <div className="w-screen md:w-3/4">
+    <div className="w-full md:w-3/4">
       <Marquee className="my-10"
         speed={120}
         direction="right"
         gradient="true"
-        gradientColor={[15, 15, 15]}
+        gradientColor={[30,30,47]}
         gradientWidth={200}
         autoFill={true}
         pauseOnHover={true}
