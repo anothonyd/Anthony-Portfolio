@@ -36,7 +36,7 @@ const TechOne = () => {
 
   return (
     <div className="w-full md:w-3/4">
-      <Marquee className="my-10"
+      <Marquee
         speed={120}
         direction="right"
         gradient="true"
@@ -48,7 +48,7 @@ const TechOne = () => {
         <div className="flex ms-[100px] py-[50px] gap-[100px]">
           {imageUrls.map((imageUrl, index) => (
             <Image
-              className="bg-slate-600 p-2 rounded shadow  hover:-translate-y-1 hover:scale-125 transition ease-in-out delay-150 duration-300"
+              className="bg-slate-600 p-2 rounded shadow  hover:-translate-y-1 hover:scale-125 transition ease-in-out delay-50 duration-200"
               key={index}
               src={imageUrl} 
               alt={`Image ${index}`}
