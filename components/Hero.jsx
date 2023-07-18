@@ -2,7 +2,7 @@
 "use client"
 
 import { motion } from "framer-motion";
-
+import { textVariant } from '../utils/motion';
 import { styles } from "../app/styles";
 
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.2 }} 
+          transition={{ duration: 1.2, delay: 0.2 }}
           className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#bf61ff]' />
           <div className='w-1 sm:h-80 h-40 pink-gradient' />
@@ -25,7 +25,7 @@ const Hero = () => {
             transition={{ duration: 1.2, delay: 0.2 }}
             className={`${styles.heroHeadText}`}
           >
-            Hi, I'm <span className="text-gradient from-purple-to-pink">Anthony</span>
+            Hi, I'm <span className="text-gradient  from-purple-to-pink">Anthony</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -36,13 +36,19 @@ const Hero = () => {
             I develop websites, interfaces <br className='sm:block hidden' />
             and web applications
           </motion.p>
+          <motion.button
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.4, delay: 0.4 }}
+            className="my-5 green-pink-gradient p-[1px]"><a className="bg-[#1E1E2F] p-3 text-[18px] text-[#FAFAFA]" href="https://drive.google.com/file/d/1_mW-VZKyPN2doNxbQ6YrgBrsd_7vxNUD/view?usp=sharing" >Download CV</a>
+          </motion.button>
 
         </div>
       </div>
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-blue-600 flex justify-center items-start p-2'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-[#5D98D290] flex justify-center items-start p-2'>
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -52,7 +58,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className='w-3 h-3 rounded-full bg-blue-600 mb-1'
+              className='w-3 h-3 rounded-full bg-[#5D98D290] mb-1'
             />
           </div>
         </a>

@@ -72,7 +72,7 @@ const Contact = () => {
       >
         <div className="bg-[#1E1E2F] px-3 md:px-5 p-5 w-full rounded-[20px]">
           <p className={`${styles.sectionSubText}  text-[#FAFAFA]`}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
+          <h3 className={styles.sectionHeadText}>Contact me.</h3>
 
           <form
             ref={formRef}

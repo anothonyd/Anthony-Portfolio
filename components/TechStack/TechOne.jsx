@@ -45,10 +45,10 @@ const TechOne = () => {
         autoFill={true}
         pauseOnHover={true}
       >
-        <div className="flex ms-[100px] gap-[100px] ">
+        <div className="flex ms-[100px] gap-[100px] overflow-hidden">
           {imageUrls.map((imageUrl, index) => (
             <Image
-              className="bg-slate-600 p-2 rounded shadow"
+              className="bg-slate-600 p-2 hover:scale-110 rounded shadow"
               key={index}
               src={imageUrl}
               alt={`Image ${index}`}
