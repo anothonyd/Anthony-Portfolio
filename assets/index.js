@@ -32,6 +32,14 @@ import tripguide from "./tripguide.png";
 
 import hero from "./hero-bg.jpg";
 
+import facebook from "./facebook.svg";
+import twitter from "./twitter.svg";
+import instagram from "./instagram.svg";
+import linkedin from "./linkedin.svg";
+import githubsvg from "./github.svg";
+
+
+
 
 export {
   logo,
@@ -62,5 +70,10 @@ export {
   kotsedeal,
   jobit,
   tripguide,
-  hero
+  hero,
+  facebook,
+  instagram,
+  twitter,
+  linkedin,
+  githubsvg
 };

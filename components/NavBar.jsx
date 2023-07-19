@@ -26,8 +26,8 @@ const NavBar = () => {
         >
           <Image
             src={logo}
-            width={40}
-            height={40}
+            width={45}
+            height={45}
             alt='logo'
             className='object-contain my-6'
           />
@@ -56,7 +56,7 @@ const NavBar = () => {
           <Image
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer rounded-2xl p-1 bg-[]"
+            className="w-[40px] h-[40px] object-contain cursor-pointer rounded-2xl p-1 bg-[]"
             onClick={() => setToggle(!toggle)}
           />
 

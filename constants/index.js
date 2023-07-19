@@ -23,7 +23,44 @@ import {
   jobit,
   tripguide,
   threejs,
+  facebook,
+  twitter,
+  instagram,
+  linkedin,
+  githubsvg
+
 } from "../assets";
+
+
+export const logoLinks = [
+  
+  {
+    id: "twitter",
+    logo: twitter,
+    link: "http://twitter.com",
+  },
+  {
+    id:"instagram",
+    logo: instagram,
+    link: "http://instagram.com",
+  },
+  {
+    id:"linkedin",
+    logo: linkedin,
+    link: "http://www.linkedin.com",
+  },
+  {
+    id:"github",
+    logo: githubsvg,
+    link: "github.com",
+  },
+  {
+    id: "facebook",
+    logo: facebook,
+    link: "http://www.facebook.com",
+  }
+
+];
 
 export const navLinks = [
   {

@@ -2,7 +2,6 @@
 "use client"
 
 import { motion } from "framer-motion";
-import { textVariant } from '../utils/motion';
 import { styles } from "../app/styles";
 
 const Hero = () => {
@@ -12,7 +11,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.2 }}
+          transition={{ duration: 1.8, delay: 0.8 }}
           className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#bf61ff]' />
           <div className='w-1 sm:h-80 h-40 pink-gradient' />
@@ -39,8 +38,8 @@ const Hero = () => {
           <motion.button
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.4, delay: 0.4 }}
-            className="my-5 green-pink-gradient p-[1px]"><p className="transition ease-in-out delay-50 duration-200 bg-[#1E1E2F] hover:bg-[#1e1e2f37] p-3 text-[18px] text-[#FAFAFA]"><a href="https://drive.google.com/file/d/1_mW-VZKyPN2doNxbQ6YrgBrsd_7vxNUD/view?usp=sharing">Download CV</a></p>
+            transition={{ duration: 1.6, delay: 0.6 }}
+            className="my-5 green-pink-gradient p-[1px]"><p className="transition ease-in-out delay-50 duration-200 bg-[#1E1E2F] hover:bg-[#1e1e2f37] p-3 text-[18px] text-[#FAFAFA]"><a href="https://drive.google.com/file/d/1_mW-VZKyPN2doNxbQ6YrgBrsd_7vxNUD/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a></p>
           </motion.button>
 
         </div>
