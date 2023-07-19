@@ -141,7 +141,7 @@ const Contact = () => {
         variants={slideIn('right', "tween", 0.2, 1)}
         className="flex-[1] w-full rounded-[20px]"
       >
-        <div className="flex flex-col me-8 h-full gap-5 text-center items-center md:items-end justify-center pb-10">
+        <div className="flex flex-col me-0 md:me-8 h-full gap-5 text-center items-center md:items-end justify-center pb-10">
           <h2 className="my-5 font-bold text-[30px] text-gradient from-purple-to-pink">I would love to hear from you.</h2>
           <p className="text-[16px]">Quezon City, Philippines</p>
           <p className="text-[16px]">anthony.dulguime.dev@gmail.com</p>
