@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { About, Contact, Feedbacks, Hero, Tech, Works, NavBar } from "../components";
 import BarLoader from "react-spinners/BarLoader";
+import { Switch } from "@material-tailwind/react";
 
 const Page = () => {
   const [loading, setLoading] = useState(false);
@@ -52,14 +53,11 @@ const Page = () => {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.05, duration: 0.9 }}
-              className='bg-cover bg-no-repeat bg-center z-10 p-1'>
-              <button
-                className={`${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-300'} fixed text-[10px] top-1 right-1 z-30 font-bold py-1 px-3 rounded`}
-                onClick={toggleTheme}
-              >
-                {theme === 'dark' ? 'Dark Mode' : 'Light Mode'}
-              </button>
+              className='bg-cover bg-no-repeat bg-center p-1'>
               <NavBar />
+              <div className='fixed top-2 right-6 z-40 sm:top-[38px]'>
+                <Switch defaultChecked  color='deep-purple' onClick={toggleTheme} />
+              </div>
             </motion.div>
 
             <Hero />

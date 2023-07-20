@@ -48,7 +48,7 @@ const TechOne = () => {
         <div className="flex ms-[100px] py-[50px] gap-[100px]">
           {imageUrls.map((imageUrl, index) => (
             <Image
-              className="bg-slate-600 p-2 rounded shadow-card hover:-translate-y-1 hover:scale-125 transition ease-in-out delay-50 duration-200"
+              className="bg-[#475569] p-2 rounded shadow-card hover:-translate-y-1 hover:scale-125 transition ease-in-out delay-50 duration-200"
               key={index}
               src={imageUrl} 
               alt={`Image ${index}`}
