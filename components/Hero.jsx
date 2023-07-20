@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import { styles } from "../app/styles";
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.8, delay: 0.8 }}
+          transition={{ duration: 1.4, delay: 0.4 }}
           className="flex flex-col justify-center items-center mt-5"
         >
           <div className="w-5 h-5 rounded-full bg-[#bf61ff]" />
@@ -24,7 +25,7 @@ const Hero = () => {
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.2 }}
+            transition={{ duration: 1.1, delay: 0.1 }}
             className={`${styles.heroHeadText}`}
           >
             Hi, I'm{" "}
@@ -33,16 +34,31 @@ const Hero = () => {
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.4, delay: 0.4 }}
-            className={`${styles.heroSubText} mt-2`}
+            transition={{ duration: 1.2, delay: 0.2 }}
+            className={`${styles.heroSubText} my-2 sm:my-0`}
           >
-            I develop websites, interfaces <br className="sm:block hidden" />
-            and web applications
+
+            <Typewriter
+              options={{
+                strings: [
+                  "I'm a Full-stack Developer", 
+                  "A Front-end Developer", 
+                  "I develop websites",
+                  "I develop web interfaces", 
+                  "I create web applications"],
+                autoStart: true,
+                loop: true,
+                delay: 75,
+                deleteSpeed:20,
+              }}
+            />
+
+
           </motion.p>
           <motion.button
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.6, delay: 0.6 }}
+            transition={{ duration: 1.3, delay: 0.3 }}
             className="my-5 green-pink-gradient p-[1px]"
           >
             <p className="transition ease-in-out delay-50 duration-200 bg-[#1E1E2F] hover:bg-[#1e1e2f37] p-3 text-[18px] text-[#FAFAFA]">

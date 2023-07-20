@@ -29,6 +29,7 @@ import tesla from "./company/tesla.png";
 import kotsedeal from "./kotsedeal.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import chibibico from "./chibibico.png";
 
 import hero from "./hero-bg.jpg";
 
@@ -70,6 +71,7 @@ export {
   kotsedeal,
   jobit,
   tripguide,
+  chibibico,
   hero,
   facebook,
   instagram,

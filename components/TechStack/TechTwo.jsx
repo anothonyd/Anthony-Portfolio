@@ -40,7 +40,7 @@ const TechOne = () => {
     direction="left" 
     gradient="true"
     gradientColor={[30,30,47]}
-    gradientWidth={200}     
+    gradientWidth={180}     
     autoFill={true}
     pauseOnHover={true}
     >

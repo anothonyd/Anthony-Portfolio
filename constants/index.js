@@ -22,6 +22,7 @@ import {
   kotsedeal,
   jobit,
   tripguide,
+  chibibico,
   threejs,
   facebook,
   twitter,
@@ -33,24 +34,24 @@ import {
 
 
 export const logoLinks = [
-  
+
   {
     id: "twitter",
     logo: twitter,
     link: "http://twitter.com",
   },
   {
-    id:"instagram",
+    id: "instagram",
     logo: instagram,
     link: "http://instagram.com",
   },
   {
-    id:"linkedin",
+    id: "linkedin",
     logo: linkedin,
     link: "http://www.linkedin.com",
   },
   {
-    id:"github",
+    id: "github",
     logo: githubsvg,
     link: "github.com",
   },
@@ -310,6 +311,27 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/",
   },
+  {
+    name: "Chi-bibi-Co",
+    description:
+      "This PHP-backed e-commerce website showcases a clean and simple Vanilla JavaScript design. It offers a straightforward shopping experience, providing users easy access to a range of products.",
+    tags: [
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: chibibico,
+    source_code_link: "https://facebook.com",
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
