@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   chibibico,
+  tracker,
   threejs,
   facebook,
   twitter,
