@@ -331,7 +331,28 @@ const projects = [
     ],
     image: chibibico,
     source_code_link: "https://facebook.com",
-  }
+  },
+  {
+    name: "Repair Tracker",
+    description:
+      "A Repair tracking web app providing a seamless and efficient solution for our valued customers to track the repair status of their products.",
+    tags: [
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reactjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tracker,
+    source_code_link: "https://github.com/",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

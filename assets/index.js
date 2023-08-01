@@ -30,6 +30,7 @@ import kotsedeal from "./kotsedeal.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import chibibico from "./chibibico.png";
+import tracker from "./tracker.png";
 
 import hero from "./hero-bg.jpg";
 
@@ -72,6 +73,7 @@ export {
   jobit,
   tripguide,
   chibibico,
+  tracker,
   hero,
   facebook,
   instagram,

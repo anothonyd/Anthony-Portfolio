@@ -7,6 +7,7 @@ import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
+
     <section className={`relative w-full h-screen mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
@@ -35,21 +36,21 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.2 }}
-            className={`${styles.heroSubText} my-2 sm:my-0`}
+            className={`${styles.heroSubText} my-2 sm:mt-0`}
           >
-
+            <time dateTime="2016-10-25" suppressHydrationWarning />
             <Typewriter
               options={{
                 strings: [
-                  "I'm a Full-stack Developer", 
-                  "A Front-end Developer", 
+                  "I'm a Full-stack Developer",
+                  "A Front-end Developer",
                   "I develop websites",
-                  "I develop web interfaces", 
+                  "I develop web interfaces",
                   "I create web applications"],
                 autoStart: true,
                 loop: true,
                 delay: 75,
-                deleteSpeed:20,
+                deleteSpeed: 20,
               }}
             />
 
@@ -72,6 +73,8 @@ const Hero = () => {
             </p>
           </motion.button>
         </div>
+        <div>
+          <spline-viewer url="https://prod.spline.design/P3CfuMkXvsIBbnEw/scene.splinecode"></spline-viewer></div>
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
