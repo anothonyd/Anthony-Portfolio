@@ -27,14 +27,14 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='green-pink-gradient shadow p-[1px] rounded-2xl sm:w-[360px] w-full'
+        className='green-pink-gradient shadow p-[1px] rounded-2xl sm:w-[480px]  w-full'
       >
-        <div className="bg-[#1E1E2F] p-5 rounded-2xl min-h-[280px] w-full">
+        <div className="bg-[#1E1E2F] p-5 rounded-2xl min-h-[250px] w-full">
           <div className='relative w-full h-[230px]'>
             <Image
               src={image}
               alt='project_image'
-              className='w-full h-full object-cover rounded-2xl'
+              className='w-full h-full object-cover rounded-xl'
             />
 
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -75,7 +75,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="w-full mx-auto text-center">
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
@@ -93,7 +93,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-5 flex flex-wrap w-full justify-center gap-7'>
+      <div className='mt-10 flex flex-wrap w-full justify-center gap-10'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`}
             index={index} {...project} />

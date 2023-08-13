@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from "framer-motion"
 import { styles } from "../app/styles"
 import { staggerContainer } from "../utils/motion"
@@ -10,7 +12,7 @@ const SectionWrapper = (Component, idName) =>
                 variants={staggerContainer}
                 initial='hidden'
                 whileInView='show'
-                viewport={{ once: true, amount: 0.30 }}
+                viewport={{ once: true, amount: 0.20 }}
                 className={`${styles.padding} max-w-7x1 mx-auto relative z-0`}
             >
                 <span className="hash-span" id={idName}>
