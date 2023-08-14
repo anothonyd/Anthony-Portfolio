@@ -66,7 +66,7 @@ const Hero = () => {
         <div>
           <spline-viewer url="https://prod.spline.design/P3CfuMkXvsIBbnEw/scene.splinecode"></spline-viewer></div>
       </div>
-      <div className="right-0 w-screen h-full relative flex justify-end p-0 m-0 xl:pe-28 z-20">
+      <div className="right-0 w-screen h-full relative flex justify-end p-0 m-0 xl:pe-28 top-[-30px] md:top-0 z-20">
         <WaterDropGrid />
       </div>
 
