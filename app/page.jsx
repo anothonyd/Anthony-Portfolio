@@ -55,7 +55,7 @@ const Page = () => {
               transition={{ delay: 0.05, duration: 0.9 }}
               className='bg-cover bg-no-repeat bg-center p-1'>
               <NavBar />
-              <div className='fixed top-2 right-6 z-40 sm:top-[38px]'>
+              <div className='fixed top-2 right-6 z-50 sm:top-[38px]'>
                 <Switch defaultChecked  color='deep-purple' onClick={toggleTheme} />
               </div>
             </motion.div>

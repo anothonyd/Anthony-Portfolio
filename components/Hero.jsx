@@ -4,33 +4,23 @@
 import { motion } from "framer-motion";
 import { styles } from "../app/styles";
 import Typewriter from 'typewriter-effect';
+import WaterDropGrid from "./TechStack/WaterDrop";
 
 const Hero = () => {
   return (
-
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen flex  mx-auto overflow-hidden`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.4, delay: 0.4 }}
-          className="flex flex-col justify-center items-center mt-5"
-        >
-          <div className="w-5 h-5 rounded-full bg-[#bf61ff]" />
-          <div className="w-1 sm:h-80 h-40 pink-gradient" />
-        </motion.div>
-
-        <div>
+        <div className="absolute z-50">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.1 }}
-            className={`${styles.heroHeadText}`}
+            className={`${styles.heroHeadText} z-50`}
           >
             Hi, I'm{" "}
-            <span className="text-gradient from-purple-to-pink">Anthony</span>
+            <span className="text-gradient from-purple-to-pink z-50 ">Anthony</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -60,9 +50,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.3, delay: 0.3 }}
-            className="my-5 green-pink-gradient p-[1px]"
+            className="my-5 green-pink-gradient p-[1px] absolute z-50"
           >
-            <p className="transition ease-in-out delay-50 duration-200 bg-[#1E1E2F] hover:bg-[#1e1e2f37] p-3 text-[18px] text-[#FAFAFA]">
+            <p className="transition ease-in-out delay-50 duration-200 bg-[#1E1E2F] hover:bg-[#1e1e2f37] p-3 text-[18px] text-[#FAFAFA] z-50">
               <a
                 href="https://drive.google.com/file/d/1_mW-VZKyPN2doNxbQ6YrgBrsd_7vxNUD/view?usp=sharing"
                 target="_blank"
@@ -76,8 +66,12 @@ const Hero = () => {
         <div>
           <spline-viewer url="https://prod.spline.design/P3CfuMkXvsIBbnEw/scene.splinecode"></spline-viewer></div>
       </div>
+      <div className="right-0 w-screen h-full relative flex justify-end p-0 m-0 xl:pe-28 z-20">
+        <WaterDropGrid />
+      </div>
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-30">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#5D98D290] flex justify-center items-start p-2">
             <motion.div
