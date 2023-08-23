@@ -54,7 +54,7 @@ const Hero = () => {
           >
             <p className="transition ease-in-out delay-50 duration-200 bg-[#1E1E2F] hover:bg-[#1e1e2f37] p-3 text-[18px] text-[#FAFAFA] z-50">
               <a
-                href="https://drive.google.com/file/d/1cnv10lIl9BWj1IA-Lpbryq8XcN0ykoEW/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1wL4DmANUNqqkOGZlrNmWCJT29vwH02lJ/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
