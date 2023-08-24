@@ -12,15 +12,15 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <div className="absolute z-50">
+        <div className="absolute z-20">
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.1 }}
-            className={`${styles.heroHeadText} z-50`}
+            className={`${styles.heroHeadText} z-20`}
           >
             Hi, I'm{" "}
-            <span className="text-gradient from-purple-to-pink z-50 ">Anthony</span>
+            <span className="text-gradient from-purple-to-pink z-20 ">Anthony</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -66,7 +66,7 @@ const Hero = () => {
         <div>
           <spline-viewer url="https://prod.spline.design/P3CfuMkXvsIBbnEw/scene.splinecode"></spline-viewer></div>
       </div>
-      <div className="right-0 w-screen h-full relative flex justify-end p-0 m-0 xl:pe-28 top-[-30px] md:top-0 z-20">
+      <div className="right-0 w-screen h-full relative flex justify-end p-0 m-0 xl:pe-28 top-[-30px] md:top-0 z-0">
         <WaterDropGrid />
       </div>
 
